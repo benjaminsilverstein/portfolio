@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+  }
+
+ header {
+    background: gray;
+    padding: 10px 30px;
+  }
+
+
+
+main {
+    padding: 10px 30px;
+}
+
+section {
+    padding: 10px 30px;
+}
+
+.proj-box {
+    border: 1px solid black;
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hide {
+    display: none;
+}
