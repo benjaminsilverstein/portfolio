@@ -7,10 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700|Oswald:600,700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
        <header>
-            <h1>Title</h1>
+            <div class="background-img"></div>
+            <h1>Benjamin A Silverstein</h1>
             <nav>
                 <ul>
                     <li>About</li>
@@ -18,13 +21,13 @@
                     <li>Contact</li>
                 </ul>
             </nav>
+            
        </header>
        <main>
            <section role="bio" class="about">
                <h2>About Me</h2>
-               <p>
-                    I'm a digital communications professional with the tools and expertise of a full digital firm. 
-                    I've run social media accounts for major advocacy organizations and politicians. I've written emails for one of the most successful digital fundraising operations in history. I've run six-figure digital ad campaigns, designed merch for online stores and now, as a Thinkful student, I'm on my way to becoming a full-stack engineer. 
+               <p class="descriptive">
+                    I'm a digital communications professional with the skilllset of a full digital firm. I've run social media accounts for major advocacy organizations and politicians. I've written emails for one of the most successful digital fundraising operations in history. I've run six-figure digital ad campaigns, designed merch for online stores and now, as a Thinkful student, I'm on my way to becoming a full-stack engineer.
                </p>
                <p>
                    I was born and raised in New Bedford, Massachusetts, a city once known for lighting the world through its whaling industry and which now boasts the largest fishing port in the country. I became a vegetarian at 13, but I always have seafood recommendations for friends when they visit the bay state. 
@@ -44,7 +47,8 @@
            </section>
            <section role="portfolio" class="portfolio">
                <h2>Portfolio</h2>
-                <p>
+                <p class="descriptive">
+            
                     Below you can find a link to my Behance profile, for various graphic design projects I've worked on. This portfolio is intended to display my coding work. Projects will be added as I progress in the Thinkful program.</p>
                 <p class="hide">
                     This was a fun project that allowed me to improve my JQuery skills and showcase the subtle details I can bring to app design. You'll notice the quiz container resembles a piece of paper and some of the elements appear handdrawn, as The Office documents the regional branch of a paper company. I also added a little easter egg in the responsive design, with the two-line Helvetica version of the office logo appearing on larger devices, and the single-line typewriter font centered in the header of smaller devices.
@@ -53,17 +57,18 @@
                     <h3>Quiz App</h3>
                 </div>
             </section>
-            <section role="contact info">
+            <section role="contact info" class="contact">
                 <h2>Contact</h2>
                 <ul>
-                    <li>email</li>
-                    <li>github</li>
-                    <li>behance</li>
-                    <li>linkedin</li>
+                    <li><img src="images/email.svg">pretend.email@gmail.com</li>
+                    <li id="github"><img src="images/github.svg">github.com/bensilverstein</li>
+                    <li id="behance"><img src="images/behance.svg">behance.com/benjaminsilverstein</li>
+                    <li id=
+                    linkedin><img src="images/linkedin.svg">linkedin.com/benjaminsilverstein2010</li>
                 </ul>
             </section>
        </main>
-        
+    </div>
         <script src="" async defer></script>
     </body>
 </html>
