@@ -56,6 +56,7 @@
     text-align: right;
     display: inline-block;
     background-color: white;
+    z-index: 9;
 }
 
 
@@ -69,7 +70,11 @@
     color: #ba4432;
     font-weight: 600;
     line-height: 1.6em;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.contact ul li {
+    font-size: 18px;
 }
 
 p {
@@ -106,8 +111,30 @@ nav ul li {
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase; 
-
+    position: relative;
+    height: auto;
 }
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.519);  
+}
+
+nav ul li {
+    animation: one-fall .4s ease-out 0s 1 normal forwards;
+} 
+
+@keyframes one-fall {
+    0% {top: -800px;}
+    100% {top: 0px}}
+    
+
+
+
 
 /* main styling */
 
@@ -129,7 +156,7 @@ main {
 }
 
 .contact {
-    grid-column: 10/14;
+    grid-column: 10/15;
     align-self: center;
 }
 
@@ -156,41 +183,87 @@ li img {
     grid-column: 3/14;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1 auto;
     margin-top: 50px;
     margin-bottom: 400px;
+    grid-template-rows: max-content;
+    
 }
 .portfolio h2 {
     text-align: right;
     grid-column-start: 13;
-    grid-row-start: 1;
+    display: inline-block;
     order: 1;
     border-bottom: 4px solid black;
     margin-bottom: 10px;
+    grid-row: 1;
+    margin-top: 0;
+    padding-top: 0;
 
 }
 
 .portfolio > .descriptive {
     grid-column: 10/14;
     text-align: right;
-    grid-row: 1;
+    grid-row: 2;
     margin-top: 20px;
     align-self: bottom;
     
  }
 
 .proj-box  {
-    /* grid-column: 1/8;
+    grid-column: 1/8;
     align-self: start;
     border: 1px solid black;
-    padding: 10px;
-    height: 250px;
+    padding: 0px;
+    height: 300px;
     display: flex;
-    grid-column: 1;
-    grid-row: 1;
-    display: inline-block; */
-    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-row: 1/3;
+    background-image: url(images/office-quiz.png);
+    background-size: cover;
+    color: white;
+    width: 100%;
+    min-width: 350px;
+}
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    border: 2px solid #ba4432;
+}
+
+.quiz-info {
+    display: none;
+}
+
+.proj-box h3 {
+    display: block;
+    background-color: rgba(56, 56, 56, 0.712);
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.proj-info {
+    display: none;
+    background-color: rgba(56, 56, 56, 0.712);
+    padding: 0px 10px 10px 10px;
+    margin-top: 0px;
+}
+
+button {
+border: 2px solid white;
+border-radius: none;
+display: inline-block;
+padding: 10px;
+background: transparent;
+margin-right: 15px;
+width: 90px;
+font-size: 18px;
+color: white;
 }
 
 
@@ -198,9 +271,32 @@ li img {
 
 
 
-/* header media queries */
+/* media queries */
 
-@media screen and (max-width: 600px) {
+@media screen  and (max-width: 960px) {
+
+.descriptive, .contact ul li  {
+    font-size: 18px;
+}
+
+.contact-text {
+    display: none;
+}
+
+.portfolio > .descriptive {
+    grid-column: 11 / 14
+}
+
+.about {
+    grid-column: 2/9;
+}
+
+.portfolio {
+    grid-column: 2/16;
+}
+}
+
+@media screen and (max-width: 650px) {
   h1 {
       font-size: 40px;
       padding: 8px 18px;
@@ -217,6 +313,36 @@ li img {
 .contact h2 {
     display: inline-block;
 }
+
+main {
+    display: block;
+    padding: 0px 30px;
+}
+
+.portfolio {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.portfolio > .descriptive{
+    text-align: left;
+}
+
+.contact-text {
+    display: inline-block;
+}
+
+.contact ul li {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.quiz-info {
+    display: block;
+    font-weight: 400;
+    color: black;
+}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -241,3 +367,4 @@ li img {
         font-size: 28px;
     }
 }
+
