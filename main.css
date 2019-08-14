@@ -8,8 +8,7 @@
       background: white;
       margin-left: auto;
       margin-right: auto;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+   
   }
 
   html {
@@ -103,7 +102,6 @@ nav ul {
 
 nav ul li {
     background-color: white;
-    padding: 10px 20px 10px 143px;
     color: black;
     list-style-type: none;
     margin: 10px 0px;
@@ -112,12 +110,15 @@ nav ul li {
     font-size: 24px;
     text-transform: uppercase; 
     position: relative;
-    height: auto;
+    padding: none;
+    
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    padding: 10px 20px 10px 143px;
+    display: inline-block;
 }
 
 nav ul li:hover {
@@ -162,11 +163,14 @@ main {
 
 .contact li {
     list-style-type: none;
-    color: #ba4432;
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 10px;
+}
 
+.contact a {
+    color: #ba4432;
+    text-decoration: none;
 }
 
 li img {
@@ -176,7 +180,6 @@ li img {
 }
 
 
-.contact h2 {display: none;}
 
 .portfolio {
     grid-row: 2;
@@ -185,20 +188,15 @@ li img {
     grid-template-columns: repeat(12, 1fr);
     margin-top: 50px;
     margin-bottom: 400px;
-    grid-template-rows: max-content;
     
 }
 .portfolio h2 {
     text-align: right;
-    grid-column-start: 13;
-    display: inline-block;
-    order: 1;
+    grid-column: 10/13;
+    display: block;
     border-bottom: 4px solid black;
     margin-bottom: 10px;
-    grid-row: 1;
-    margin-top: 0;
-    padding-top: 0;
-
+    align-self: top;
 }
 
 .portfolio > .descriptive {
@@ -206,9 +204,14 @@ li img {
     text-align: right;
     grid-row: 2;
     margin-top: 20px;
-    align-self: bottom;
-    
+
  }
+ .quiz-info {
+    grid-column: 1/8;
+    order: 5;
+ }
+ 
+ 
 
 .proj-box  {
     grid-column: 1/8;
@@ -224,7 +227,7 @@ li img {
     background-size: cover;
     color: white;
     width: 100%;
-    min-width: 350px;
+    
 }
 
 button a {
@@ -236,9 +239,7 @@ button:hover {
     border: 2px solid #ba4432;
 }
 
-.quiz-info {
-    display: none;
-}
+
 
 .proj-box h3 {
     display: block;
@@ -266,8 +267,14 @@ font-size: 18px;
 color: white;
 }
 
-
-
+.contact h2 {
+    display: inline-block;
+    border-bottom: 4px solid black;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 0;
+    grid-column: 10/13;
+}
 
 
 
@@ -280,7 +287,7 @@ color: white;
 }
 
 .contact-text {
-    display: none;
+    font-size: 16px;
 }
 
 .portfolio > .descriptive {
@@ -304,7 +311,7 @@ color: white;
 
   li {
     font-size: 20px;
-    padding: 8px 18px 8px 100px;
+   
   }
   header {
       height: 400px;
@@ -341,6 +348,11 @@ main {
     display: block;
     font-weight: 400;
     color: black;
+    
+}
+
+.portfolio h2 {
+    text-align: left;
 }
 
 }
@@ -350,14 +362,20 @@ main {
         font-size: 30px;
     }
 
+   
+
     nav ul li {
-        padding: 6px 20px 6px 80px;
         color: black;
         list-style-type: none;
         margin: 0px 0px 10px 0px;
         font-size: 20px;
         text-transform: uppercase; 
+        padding: none;
     
+    }
+
+    nav a {
+        padding: 6px 20px 6px 80px;
     }
    
 }

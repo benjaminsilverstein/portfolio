@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700|Oswald:600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700%7COswald:600,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -16,16 +16,16 @@
             <h1>Benjamin A Silverstein</h1>
             <nav>
                 <ul>
-                        <a href="#about"><li>About</li></a>
-                        <a href="#portfolio"> <li>Portfolio</li></a>
-                        <a href="#contact"><li>Contact</li></a>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             
        </header>
        <main>
-           <section role="bio" class="about">
-               <h2><a name="about">About Me</a></h2>
+           <section class="about">
+               <h2><a id="about">About Me</a></h2>
                <p class="descriptive">
                     I'm a digital communications professional with the skilllset of a full digital firm. I've run social media accounts for major advocacy organizations and politicians. I've written emails for one of the most successful digital fundraising operations in history. I've run six-figure digital ad campaigns, designed merch for online stores and now, as a Thinkful student, I'm on my way to becoming a full-stack engineer.
                </p>
@@ -45,31 +45,33 @@
                     I enrolled in the Thinkful coding program in order to gain skills that would enable me to help advocacy organizations improve their web tools, provide better online experiences to supporters, and ultimately crush their fundraising and policy goals.
                 </p>  
            </section>
-           <section role="portfolio" class="portfolio">
+           <section  class="portfolio">
                <h2>Portfolio</h2>
-                <p class="descriptive portfolio-overview"><a name="portfolio"></a>
+                <p class="descriptive portfolio-overview"><a id="portfolio"></a>
             
-                   I've included a link to my Behance profile, for various graphic design projects I've worked on. This portfolio is intended to display my coding work. Projects will be added as I progress in the Thinkful program.</p>
+                   This portfolio is intended to display my coding work. Projects will be added as I progress in the Thinkful program.</p>
+
+                   
+                
                 
                 <div class="proj-box">
                     <h3>Quiz App</h3>
                     <div class="proj-info">
         
-                        <button class="github"><a href="https://github.com/benjaminsilverstein/quiz-app-final" target="_blank">Github</a></button><button class="live" ><a href="https://benjaminsilverstein.github.io/quiz-app-final/" target="_blank">Live</a></button>
+                        <button onclick="window.location.href = 'https://github.com/benjaminsilverstein/quiz-app-final';">Github</button><button onclick="window.location.href = 'https://benjaminsilverstein.github.io/quiz-app-final/';">Live</button>
                     </div>
                 </div>
-                <p class="descriptive quiz-info">
-                        This was a fun project that allowed me to improve my JQuery skills and showcase the subtle details I can bring to app design. You'll notice the quiz container resembles a piece of paper and some of the elements appear handdrawn, as The Office documents the regional branch of a paper company. I also added a little easter egg in the responsive design, with the two-line Helvetica version of the office logo appearing on larger devices, and the single-line typewriter font centered in the header of smaller devices.
+                <p class="quiz-info">
+                        This was a fun project that allowed me to improve my JQuery and JavaScript skills and showcase the subtle details I can bring to app design. You'll notice the quiz container resembles a piece of paper and some of the elements appear handdrawn, as The Office documents the regional branch of a paper company. I also added a little easter egg in the responsive design, with the two-line Helvetica version of the office logo appearing on larger devices, and the single-line typewriter font centered in the header of smaller devices.
                     </p>
                 
             </section>
-            <section role="contact info" class="contact">
+            <section class="contact">
                 <h2>Contact</h2>
-                <a name="contact"><ul></a>
-                    <li><img src="images/email.svg"><span class="contact-text">pretend.email@gmail.com</span></li>
-                    <li><img src="images/github.svg"><span class="contact-text">github.com/bensilverstein</span></li>
-                    <li><img src="images/behance.svg"><span class="contact-text">behance.com/benjaminsilverstein</span></li>
-                    <li><img src="images/linkedin.svg"><span class="contact-text">linkedin.com/bensilverstein2010</span></li>
+                <a id="contact"></a><ul>
+                    <li><img src="images/email.svg" alt="email-icon"><span class="contact-text"><a href="mailto:bensilverstein@fake.com">pretend.email@gmail.com</a></span></li>
+                    <li><img src="images/github.svg" alt="github-icon"><span class="contact-text"><a href="https://github.com/benjaminsilverstein">/bensilverstein</a></span></li>
+                    <li><img src="images/linkedin.svg" alt="linkedin-icon"><span class="contact-text"><a href="www.linkedin.com/in/benjaminsilverstein2010">/benjaminsilverstein2010</a></span></li>
                 </ul>
             </section>
        </main>
