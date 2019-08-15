@@ -249,7 +249,6 @@ button:hover {
 }
 
 .proj-info {
-    display: none;
     background-color: rgba(56, 56, 56, 0.712);
     padding: 0px 10px 10px 10px;
     margin-top: 0px;
@@ -315,6 +314,10 @@ color: white;
   }
   header {
       height: 400px;
+}
+
+.proj-box {
+    background-image: url(images/office-quiz-mobile.png);
 }
 
 .contact h2 {
